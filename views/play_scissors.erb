@@ -1,0 +1,13 @@
+<h2> We Played <%= @player_move %>!</h2>
+<h2> They Played <%= @computer_move %>!</h2>
+
+
+<% if @computer_move == "scissors" %>
+  <h2>We tied!</h2>
+<% elsif @computer_move == "rock" %>
+  <h2>We Lost!</h2>
+<% else %>
+  <h2> We won!</h2>
+ <% end %>
+
+<div><a href="/">Rules</a></div>
